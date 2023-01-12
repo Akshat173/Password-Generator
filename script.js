@@ -20,7 +20,6 @@ let easy_password_characters = uppercase.concat(lowercase)
 let medium_password_characters = easy_password_characters.concat(numbers)
 let hard_password_characters = medium_password_characters.concat(symbols)
 let password = ""
-console.log(easy_password_characters, medium_password_characters, hard_password_characters)
 
 const generatePassword=()=>{
     // For easy difficulty
