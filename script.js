@@ -13,10 +13,6 @@ submitBtn.onclick = ()=>{
     password_length = document.getElementById('p-length').value  
     password_type = document.querySelector('input[name="difficulty"]:checked').id
     generatePassword()
-    
-    setTimeout(() => {
-        console.log(`The password length is ${password_length} and the password type is ${password_type}`)
-    }, 100);
 }
 
 // Generating password characters for each difficulty levels
@@ -32,7 +28,6 @@ const generatePassword=()=>{
         for(let i=0; i<password_length; i++){
         password += easy_password_characters[Math.round(Math.random()*51)]
     }
-    console.log(password) 
     }
     
     // For medium difficulty
@@ -40,7 +35,6 @@ const generatePassword=()=>{
         for(let i=0; i<password_length; i++){
         password += medium_password_characters[Math.round(Math.random()*61)]
     }
-    console.log(password) 
     }
     
     // For hard difficulty
@@ -48,7 +42,6 @@ const generatePassword=()=>{
         for(let i=0; i<password_length; i++){
         password += hard_password_characters[Math.round(Math.random()*67)]
     }
-    console.log(password) 
     }
 
     document.getElementById("password-container").innerHTML = password
