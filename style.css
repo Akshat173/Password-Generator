@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap');
+.navbar{
+    min-height: 8vh;
+    font-family: 'Chivo Mono', monospace;
+}
+.customize-card{
+    height: 85vh;
+    width: 95vw;
+    margin: 0px auto;
+}
+.main-container{
+    font-family: 'Chivo Mono', monospace;
+    display: flex;
+}
+.box{
+    display: inline-block;
+    height: 3rem;
+    width: 30em;
+    border: 2px solid rgb(199, 199, 199);
+}
+#password-container{
+    font-size: larger;
+    height: 100%;
+}
